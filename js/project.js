@@ -14,7 +14,7 @@ $(document).ready(function(){
 		type: 'get',
 		dataType: 'html',
 		headers: {
-			Authorization: "token "+"76c016f0e7fdd5dc25dfc7d89efdf0452c067b6d"
+			Authorization: "token "+token
 		},
 		 success: function(data){
       $('div.pinned-repo-item-content').html($(data).find('div.pinned-repo-item-content span a.text-bold').html());
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		 	$('#error').fadeIn();
  	});
  }
- 
+
 
  function onClickFav(e) {
  	$('#fav').click(function(e){
