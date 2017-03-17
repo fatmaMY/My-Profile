@@ -9,22 +9,22 @@ $(document).ready(function(){
 		// 	$('#imgLoading').fadeOut();
 		// 	$('#error').fadeIn();
 		// 	});
- 	$.ajax({
-		url: 'https://github.com/fatmaMY',
-		type: 'get',
-		dataType: 'html',
-		headers: {
-			Authorization: "token "+token
-		},
-		 success: function(data){
-      $('div.pinned-repo-item-content').html($(data).find('div.pinned-repo-item-content span a.text-bold').html());
-   }
+ 	// $.ajax({
+		// url: 'https://github.com/fatmaMY',
+		// type: 'get',
+		// dataType: 'html',
+		// headers: {
+		// 	Authorization: "token "+token
+		// },
+		//  success: function(data){
+  //     $('div.pinned-repo-item-content').html($(data).find('div.pinned-repo-item-content span a.text-bold').html());
+  //  }
 		
 		
-	 }).fail(function(error){
-	 	$('#imgLoading').fadeOut();
-		 	$('#error').fadeIn();
- 	});
+	 // }).fail(function(error){
+	 // 	$('#imgLoading').fadeOut();
+		//  	$('#error').fadeIn();
+ 	// });
  }
 
 
@@ -52,6 +52,32 @@ function onClickCurrent(e) {
 }
 
 function makeAjaxReqCurrent() {
-	// body...
-}
+	$.ajax({
+		url: 'https://api.github.com/users/fatmaMY/repos',
+		type: 'GET',
+		dataType: 'json'
+	}).success(function(data){
+		var data=data.slice(0, 6);
+	
+		var html=''
+	
+	$.each(data,function(i,itm){
+		html+='<div class="row">'+
+		'<ul>'+
+		'<li>'+itm.name+'</li?'+
+		'</ul>'+
+		'</div>'
+		
+});
+	$('#result').append(html);
+})
+	.fail(function(error){
+	 	$('#imgLoading').fadeOut();
+	 	$('#error').fadeIn();
+ 	 });
+
+	}
+		
+	
+
 
