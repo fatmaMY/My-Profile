@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Projects</title>
 
     <!-- Bootstrap -->
     <script src='js/jquery-3.1.1.min.js'></script>
@@ -32,7 +32,7 @@
   <div class="col-lg-6">
     <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button id="current" class="btn btn-default" type="button">Go!</button>
       </span>
       <input type="text" class="form-control" placeholder="Current...">
     </div><!-- /input-group -->
@@ -42,12 +42,24 @@
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Favorite...">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button id="fav" class="btn btn-default" type="button">Go!</button>
       </span>
+      <div class="col-md-12">
+			<div class='col-md-6'>
+				<img id='imgLoading' src="images/loading.gif" hidden >
+				<br>
+				<div class="alert alert-danger" id="error" hidden>
+					Error! couldn't find any result
+				</div>
+			</div>
+		</div>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
-<div id="#result"></div>
+<div id="result">
+	<ol></ol>
+</div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
