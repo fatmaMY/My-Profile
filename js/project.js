@@ -4,7 +4,7 @@ $(document).ready(function(){
 	});
  
  function makeAjaxReqFav() {
- 	//var fav=$( "#result" ).load( "https://github.com/fatmaMY.html a.text-bold")
+ 	var fav=$( "#result" ).load( "https://github.com/fatmaMY.html a.text-bold")
  	// .fail(function(error){
 		// 	$('#imgLoading').fadeOut();
 		// 	$('#error').fadeIn();
@@ -56,7 +56,16 @@ function makeAjaxReqCurrent() {
 		url: 'https://api.github.com/users/fatmaMY/repos',
 		type: 'GET',
 		dataType: 'json'
-	}).success(function(data){
+	}).success(resultHandler)
+		
+	.fail(function(error){
+	 	$('#imgLoading').fadeOut();
+	 	$('#error').fadeIn();
+ 	 });
+
+	}
+	
+	function resultHandler(data) {
 		var data=data.slice(0, 6);
 	
 		var html=''
@@ -70,14 +79,8 @@ function makeAjaxReqCurrent() {
 		
 });
 	$('#result').append(html);
-})
-	.fail(function(error){
-	 	$('#imgLoading').fadeOut();
-	 	$('#error').fadeIn();
- 	 });
 
-	}
-		
+		}	
 	
 
 
