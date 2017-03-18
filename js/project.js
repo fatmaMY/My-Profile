@@ -1,34 +1,34 @@
 $(document).ready(function(){
 	onClickFav();
 	onClickCurrent();
-	});
- 
- function makeAjaxReqFav() {
- 	
- }
+});
+
+function makeAjaxReqFav() {
+	
+}
 
 
- function onClickFav(e) {
- 	$('#fav').click(function(e){
- 		$('#result').html('');
+function onClickFav(e) {
+	$('#fav').click(function(e){
+		$('#result').html('');
 		$('#imgLoading').fadeIn();
 		$('#error').fadeOut();
 		e.preventDefault();
 		makeAjaxReqFav();
 		$('#imgLoading').fadeOut();
-       
- });
+		
+	});
 }
 function onClickCurrent(e) {
 	$('#current').click(function(e){
- 		$('#result').html('');
+		$('#result').html('');
 		$('#imgLoading').fadeIn();
 		$('#error').fadeOut();
 		e.preventDefault();
 		makeAjaxReqCurrent()
 		$('#imgLoading').fadeOut();
-       
- });
+		
+	});
 }
 
 function makeAjaxReqCurrent() {
@@ -37,18 +37,18 @@ function makeAjaxReqCurrent() {
 		type: 'GET',
 		dataType: 'json'
 	}).success(resultHandler)
-		
+	
 	.fail(function(error){
-	 	$('#imgLoading').fadeOut();
-	 	$('#error').fadeIn();
- 	 });
+		$('#imgLoading').fadeOut();
+		$('#error').fadeIn();
+	});
 
-	}
+}
+
+function resultHandler(data) {
+	var data=data.slice(0, 6);
 	
-	function resultHandler(data) {
-		var data=data.slice(0, 6);
-	
-		var html=''
+	var html=''
 	
 	$.each(data,function(i,itm){
 		html+='<div class="row">'+
@@ -57,10 +57,10 @@ function makeAjaxReqCurrent() {
 		'</ul>'+
 		'</div>'
 		
-});
+	});
 	$('#result').append(html);
 
-		}	
-	
+}	
+
 
 
