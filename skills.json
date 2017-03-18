@@ -1,0 +1,49 @@
+{"skills":[
+	{"name": "Procedural Ruby",
+     "description": "a programming language that would be simple to use, elegant to write, but capable of building vastly complex things."},
+     
+     {"name": "Object-Oriented Programming(OOP)",
+     "description": "It bundle up individual pieces of data that represent a (thing) — it also bundles customized functions that can be performed on that data. These are called methods; behaviors that an object performs upon its internal data and even upon other code objects."},
+     
+     {"name": "Git",
+     "description": "Is a distributed version control system. In a distributed system, all users have a complete copy of the entire repository."},
+     
+     {"name": "GitHub",
+     "description": "A popular remote repository hosting service built to integrate seamlessly with Git."},
+     
+     {"name": "HTML",
+     "description": "HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript.  HTML describes the structure of a web page semantically and originally included cues for the appearance of the document."},
+     
+     {"name": "CSS",
+     "description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Most often used to set the visual style of web pages and user interfaces written in HTML"},
+     
+     {"name": "SQL",
+     "description": "SQL (Structured Query Language) is a language for managing data in a database. Unlike some other programming languages, it's only used for one thing: talking to databases."},
+      
+      {"name": "ORM",
+      "description": "Object Relational Mapping (ORM) is simply a manner in which we implement the code that connects our Ruby program to our database. An ORM is really just a concept. It is a design pattern, a conventional way for us to organize our programs when we want those programs to connect to a database."},
+      
+      {"name": "Active Record",
+      "description": "Active Record is a Ruby gem. It's library of code that we can get an enormous amount of functionality simply by following a few conventions. It maps database tables to Ruby classes."},
+      
+      {"name": "Rack", 
+      "description": "Rack provides a minimal interface between webservers that support Ruby and Ruby frameworks. Rack is a gem and it is what Rails is built on top of."},
+      
+      {"name": "Sinatra",
+      "description": "Sinatra is a Domain Specific Language implemented in Ruby that's used for writing web applications. It's some pre-written methods that we can include in our applications to turn them into Ruby web applications."},
+      
+      {"name": "MVC",
+      "description": "The Model-View-Controller paradigm is a popular way of building frameworks for web applications - it provides a separation of concerns where groups of files have specific jobs and interact with each other in very defined ways."},
+      
+      {"name": "Rails",
+      "description": "Rails is a Ruby Gem. It is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages."},
+     
+      {"name": "JavaScript",
+      "description": "JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language.  Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production."},
+      
+      {"name": "jQuery",
+      "description": "It's One of the most widely used JavaScript libraries. It makes our jobs as developers much easie.}
+
+
+]
+}
