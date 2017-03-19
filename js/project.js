@@ -53,7 +53,7 @@ function resultHandler(data) {
 	$.each(data,function(i,itm){
 		html+='<div class="row">'+
 		'<ul>'+
-		'<li>'+itm.name+'</li?'+
+		'<li>'+itm.name+'</li>'+
 		'</ul>'+
 		'</div>'
 		

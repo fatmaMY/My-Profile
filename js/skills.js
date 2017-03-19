@@ -4,10 +4,10 @@ $(document).ready(function(){
 
 function onClickMySkills() {
 	$('#skillsList').click(function(e){
+		$(".list-group").fadeIn();
 		e.preventDefault();
 		$('#respond').html('');
 		makeAjaxReqSkills();
-		
 	});
 
 	 $('.course').on('click', function(){
@@ -22,9 +22,15 @@ function onClickMySkills() {
 });
 }
 function makeAjaxReqSkills() {
-	$.get("./skills.json",function(response){
-     $("#respond").append(response);
-     console.log(response)
+$.get("./skills.json",function(data){
+     console.log(data)
+     var html='';
+     $.each(data.skills,function(i,res){
+     	html+='<div class="list-group">'+
+        '<a href="#" class="list-group-item list-group-item-info" >'+res.name+'</a>'+
+        '</div>'
+
   });
-	
+	$('#respond').append(html);
+	});
 }
