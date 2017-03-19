@@ -9,25 +9,18 @@ function onClickMySkills() {
 		$('#respond').html('');
 		makeAjaxReqSkills();
 	});
-
-	 $('.course').on('click', function(){
-  //   $(this).find('.detail').slideToggle();
-  // });
-
-  // $('.course .delete').on('click', function(event){
-  //   alert("about to delete");
-  // event.stopPropagation();
-
-  // });
-});
 }
+
 function makeAjaxReqSkills() {
 $.get("./skills.json",function(data){
-     console.log(data)
+     //console.log(data)
      var html='';
      $.each(data.skills,function(i,res){
      	html+='<div class="list-group">'+
-        '<a href="#" class="list-group-item list-group-item-info" >'+res.name+'</a>'+
+     	'<a href="#" class="list-group-item active">'+
+        '<h4 class="list-group-item-heading">'+res.name+'</h4>'+
+        '<p class="list-group-item-text">'+res.description+'</p>'+
+        '</a>'+
         '</div>'
 
   });
