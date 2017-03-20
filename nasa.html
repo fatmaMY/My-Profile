@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>NASA image and video of the day</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>NASA image and video of the day</title>
 
-    <!-- Bootstrap -->
-    <script src='js/jquery-3.1.1.min.js'></script>
-    <script src='js/nasa.js'></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <script src='js/jquery-3.1.1.min.js'></script>
+  <script src='js/nasa.js'></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Progects</a>
-<a href="skills.html">Skills</a>
-<a href="nasa.html">NASA image and video of the day </a>
-<a href="another-choice.html">Another choice</a>
-</br>
+      <![endif]-->
+    </head>
+    <body>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Progects</a>
+      <a href="skills.html">Skills</a>
+      <a href="nasa.html">NASA image and video of the day </a>
+      <a href="another-choice.html">Another choice</a>
+    </br>
 
-</br>
-<div id="result"></div>
-<div class="row">
-<br>
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <iframe width="100%" height="500px" id='video'
-        src="">
-      </iframe>
-      </div>
+  </br>
+  <div id="result"></div>
+  <div class="row">
+    <br>
     <div class="col-md-2"></div>
-      <br>
-<div class="row" hidden="" id="content">
+    <div class="col-md-8">
+      <iframe width="100%" height="500px" id='video' src="">
+      </iframe>
+      <img id="image" src="" alt="nasa_picture">
+    </div>
+    <div class="col-md-2"></div>
+  </br>
+  <div class="row" hidden="" id="content">
+    <div class="col-lg-12">
+      <div class="thumbnail">
+        <!-- <img id="image" src="#" alt="nasa_picture"> -->
+        <div class="caption">
+          <h3 id="date">date</h3>
+          <h3 id="explanation">Title</h3>
+          <p>explanation</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</br>
+<div id="result2"></div>
+<div class="row" hidden="">
   <div class="col-lg-12">
     <div class="thumbnail">
-      <img id="image" src="#" alt="title">
-      <a href="#" id="url">url</a>
+      <!-- <img id="image2" src="#" alt="nasa_picture"> -->
       <div class="caption">
-        <h3 id="date">date</h3>
-        <h3 id="explanation">Title</h3>
-        <p>explanation</p>
-        
+        <h3 id="date2">date</h3>
+        <h3 id="caption1">caption</h3>
+
+
       </div>
     </div>
   </div>
 </div>
+</br>
+<div class="col-md-2"></div>
+<div class="col-md-8">
+  <img id="image2" src="#" alt="nasa_picture">
+</div>
+<div class="col-md-2"></div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
