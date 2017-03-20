@@ -1,6 +1,7 @@
 $(document).ready(function(){
+	makeAjaxReqCurrent()
 	onClickFav();
-	onClickCurrent();
+	
 });
 
 function makeAjaxReqFav() {
@@ -10,23 +11,12 @@ function makeAjaxReqFav() {
 
 function onClickFav(e) {
 	$('#fav').click(function(e){
-		$('#result').html('');
-		$('#imgLoading').fadeIn();
+		$('#current').fadeOut('');
+		$('#favorite').fadeIn();
 		$('#error').fadeOut();
 		e.preventDefault();
 		makeAjaxReqFav();
-		$('#imgLoading').fadeOut();
 		
-	});
-}
-function onClickCurrent(e) {
-	$('#current').click(function(e){
-		$('#result').html('');
-		$('#imgLoading').fadeIn();
-		$('#error').fadeOut();
-		e.preventDefault();
-		makeAjaxReqCurrent()
-		$('#imgLoading').fadeOut();
 		
 	});
 }
@@ -37,30 +27,25 @@ function makeAjaxReqCurrent() {
 		type: 'GET',
 		dataType: 'json'
 	}).success(resultHandler)
-	
+
 	.fail(function(error){
-		$('#imgLoading').fadeOut();
 		$('#error').fadeIn();
 	});
 
+	
 }
 
 function resultHandler(data) {
 	var data=data.slice(0, 6);
-	
 	var html=''
-	
 	$.each(data,function(i,itm){
 		html+='<div class="row">'+
 		'<ul>'+
-		'<li>'+itm.name+'</li>'+
+		'<li><a href="'+itm.html_url+'">'+itm.name+'</a></li>'+'Last update at '+itm.pushed_at.replace(/\T.*$/g,"")+
 		'</ul>'+
 		'</div>'
 		
 	});
-	$('#result').append(html);
+	$('#current').append(html);
 
 }	
-
-
-

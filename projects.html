@@ -23,42 +23,27 @@
     
     <a href="index.html">Home</a>
 <a href="about.html">About</a>
-<a href="projects.html">Progects</a>
+<a href="projects.html">Projects</a>
 <a href="skills.html">Skills</a>
 <a href="nasa.html">NASA image and video of the day </a>
 <a href="another-choice.html">Another choice</a>
+</br>
+<div>
 
-<div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button id="current" class="btn btn-default" type="button">Go!</button>
-      </span>
-      <input type="text" class="form-control" placeholder="Current...">
-    </div><!-- /input-group -->
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#current" aria-controls="current" role="tab" data-toggle="tab">Current</a></li>
+    <li role="presentation"><a href="#favorite" aria-controls="favorite" role="tab" id="fav" data-toggle="tab">Favorite</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+  <br>
+    <div role="tabpanel" class="tab-pane active" id="current">Current Projects
+  <ol><a href="#" class="project"></ol>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="favorite" hidden="">My Favorite Projects</div>
   </div>
-  <!-- /.col-lg-6 -->
-  <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Favorite...">
-      <span class="input-group-btn">
-        <button id="fav" class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-   <div class="col-md-12">
-			<div class='col-md-6'>
-				<img id='imgLoading' src="images/loading.gif" hidden >
-				<br>
-				<div class="alert alert-danger" id="error" hidden>
-					Error! couldn't find any result
-				</div>
-			</div>
-		</div>
-</div><!-- /.row -->
-<div id="result">
-	<ol></ol>
-</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -67,5 +52,3 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
