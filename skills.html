@@ -13,6 +13,7 @@
 	<script src='js/skills.js'></script>
 	<script src='skills.json'></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,31 +23,39 @@
       <![endif]-->
   </head>
   <body>
-  	<a href="index.html">Home</a>
-  	<a href="about.html">About</a>
-  	<a href="projects.html">Projects</a>
-  	<a href="skills.html">Skills</a>
-  	<a href="nasa.html">NASA image and video of the day </a>
-  	<a href="another-choice.html">Another choice</a>
+  	<div class="row" >
+  		<div class="col-sm-12">
+  			<h4><a href="index.html">Home</a>
+  				<a href="about.html">About</a>
+  				<a href="projects.html">Projects</a>
+  				<a href="skills.html">Skills</a>
+  				<a href="nasa.html">NASA image and video of the day</a>
+  				<a href="another-choice.html">Another choice</a></h4>
+  			</div>
+  		</div>
+  	</br>
   </br>
-</br>
-<h1>My Skills <a href="#" id="skillsList"><span class="label label-default">click here</a></span></h1>
-<div id="respond"></div>
-<!-- <div class="list-group" hidden="" id="list">
- 
-  <a href="#" class="list-group-item list-group-item-info" ></a>
-  
-</div> -->
-<div class="list-group" hidden="" id="list">
-	<a href="#" class="list-group-item active">
-		<h4 class="list-group-item-heading">Name</h4>
-		<p class="list-group-item-text">Description</p>
-	</a>
-</div>
+  <div id="wrapper" id="clearfix">
+  	<section id="main">
+  		<h1>My Skills <a href="#" id="skillsList"><span class="label label-default">click here</a></span></h1>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+  		<div id="respond"></div>
+  		<div class="row" hidden=""  id="list">
+  			<div class="col-sm-12">
+  				<div class="list-group" hidden="">
+  					<a href="#" class="list-group-item active">
+  						<h4 class="list-group-item-heading">Name</h4>
+  						<p class="list-group-item-text">Description</p>
+  					</a>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  </div> <!--close wrapper -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
