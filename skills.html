@@ -8,10 +8,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>My skills</title>
 
-	<!-- Bootstrap -->
-	<script src='js/jquery-3.1.1.min.js'></script>
-	<script src='js/skills.js'></script>
-	<script src='skills.json'></script>
+	<!-- <script src='skills.json'></script> -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -23,39 +20,46 @@
       <![endif]-->
   </head>
   <body>
-  	<div class="row" >
-  		<div class="col-sm-12">
-  			<h4><a href="index.html">HOME</a>
-  				<a href="about.html">ABOUT</a>
-  				<a href="projects.html">PROJECTS</a>
-  				<a href="skills.html">SKILLS</a>
-  				<a href="nasa.html">NASA IMAGE AND VIDEO OF THE DAY</a>
-  				<a href="another-choice.html">Another choice</a></h4>
-  			</div>
-  		</div>
-  	</br>
+    <div class="container">
+    	<div id="nav-placeholder">
+   </div>
   </br>
-  <div id="wrapper" id="clearfix">
-  	<section id="main">
-  		<h1>My Skills <a href="#" id="skillsList"><span class="label label-default">click here</a></span></h1>
 
-  		<div id="respond"></div>
-  		<div class="row" hidden=""  id="list">
-  			<div class="col-sm-12">
-  				<div class="list-group" hidden="">
-  					<a href="#" class="list-group-item active">
-  						<h4 class="list-group-item-heading">Name</h4>
-  						<p class="list-group-item-text">Description</p>
-  					</a>
-  				</div>
-  			</div>
-  		</div>
-  	</section>
-  </div> <!--close wrapper -->
+</br>
+    <!-- <div id="wrapper" class="clearfix"> -->
+    <div class="row">
+    	<!-- <section id="main"> -->
+      <div class="col-sm-12">
+    	 <h1>My Skills <a href="#" id="skillsList"><span class="label label-default">click here</span></a></h1>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-sm-12">
+    	 <div id="respond"> </div>
+      </div>
+    </div>
+
+		<!-- <div class="row" hidden="" id="list">
+			<div class="col-sm-12">
+				<div class="list-group" hidden="">
+          <div class="list-group-item active">
+						<h4 class="list-group-item-heading">Name</h4>
+						<p class="list-group-item-text">Description</p>
+          </div>
+				</div>
+			</div>
+		</div> -->
+    	<!-- </section> -->
+    <!-- </div> close wrapper  -->
+  </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+  <!-- <script src='js/jquery-3.1.1.min.js'></script> -->
+  <script src='js/skills.js'></script>
+  <script src='js/nav.js'></script>
 </body>
 </html>
