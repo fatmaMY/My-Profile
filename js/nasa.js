@@ -6,7 +6,7 @@ $(document).ready(function(e){
 			handleData(data);
 
 		}});
-	makeAjaxRecentPhoto()
+	makeAjaxRecentPhoto();
 });
 
 function handleData(data) {
@@ -61,5 +61,3 @@ function handleData(data) {
  	$("#image2").attr("src", "https://epic.gsfc.nasa.gov/archive/natural/"+res[0].date.replace(/\-/g, "/").replace(/\s.*$/g,"")+"/png/"+res[0].image+".png");
  	$('#result2').append(html2);
  }
-
- 

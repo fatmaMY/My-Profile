@@ -1,0 +1,3 @@
+ - Rearrange list of current projects to be ONE list of FIVE items instead of FIVE lists of ONE item each.
+ - Make sure CSS files are at the bottom of the header and JS files are at the bottom of the body on each HTML page.
+ - 

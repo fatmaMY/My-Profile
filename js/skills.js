@@ -12,7 +12,7 @@ function onClickMySkills() {
 }
 
 function makeAjaxReqSkills() {
-	$.get("./skills.json",function(data){
+	$.get("skills.json",function(data){
      //console.log(data)
      var html='';
      $.each(data.skills,function(i,res){

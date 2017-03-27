@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
- body{
+
+html {
+  height: 100%;
+}
+
+body {
    background: linear-gradient(135deg,indigo,pink,white,#660033 );
 }
 
@@ -53,7 +58,7 @@ img {
 }
 
 h1#text-shadow {
-  font-family: bold 2.6em 'Elsie Swash Caps', cursive;
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: #eee;
   text-shadow: 0 5px 8px yellow;
 }
@@ -102,3 +107,7 @@ div.thumbnail#nasa {
   margin-top: 20px;
 }
 
+h3#font-type{
+  font-family: 'Arvo', serif;
+  font-size: 30px;
+}
