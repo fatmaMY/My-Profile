@@ -38,14 +38,14 @@ function makeAjaxReqCurrent() {
 function resultHandler(data) {
 	var data=data.slice(0, 6);
 	var html=''
+	html+='<div class="row">'+
+	'<ul>'+
 	$.each(data,function(i,itm){
-		html+='<div class="row">'+
-		'<ul>'+
+	
 		'<li><a href="'+itm.html_url+'">'+itm.name+'</a></li>'+'Last update at '+itm.pushed_at.replace(/\T.*$/g,"")+
+		});
 		'</ul>'+
 		'</div>'
-		
-	});
 	$('#current').append(html);
 
 }	

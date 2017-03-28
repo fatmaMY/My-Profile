@@ -5,8 +5,13 @@ html {
 }
 
 body {
-   background: linear-gradient(135deg,indigo,pink,white,#660033 );
+    background: url(../images/coding.jpg);
+    /*background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;*/
 }
+
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -39,11 +44,6 @@ body {
   line-height: 0;
 }
 
-#violet {
-	 background: url(images/wood.jpg) no-repeat center top;
-  background-size: cover;
-}
-
 figure {
   margin: 10px 10px 10px;
 }
@@ -62,14 +62,7 @@ h1#text-shadow {
   color: #eee;
   text-shadow: 0 5px 8px yellow;
 }
-div#my-name {
-	/*font-family: bold 4em 'Elsie Swash Caps', cursive;*/
-	background-image: url(images/wood.jpg);
-	 z-index: -1;
-	 width: 500px;
-	 height: 100px;
 
-}
 
 div.thumbnail#nasa {
 	background-color: #c653c6;
