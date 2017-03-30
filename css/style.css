@@ -1,22 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
 
-html {
-  height: 100%;
-}
-
-body {
-    background: url(../images/coding.jpg);
-    /*background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;*/
-}
-
-
-
+html.home {
+      height: 100%;
+    }
+  
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+body#trans{
+  background-color: rgba(0,0,0,.5); 
+}
+body.home{
+  background-image: url('../../images/coding4.jpg');
+  background-repeat: no-repeat;
+  background-size:cover
+}
+body.nasa{
+  background-image: url('../../images/coding8.jpg');
+  background-repeat: no-repeat;
+  background-size:cover
+}
+body.project{
+  background-image: url('../../images/coding10.jpg');
+  background-repeat: no-repeat;
+  background-size:cover
+}
+body.skill{
+  background-image: url('../../images/coding7.jpg');
+  background-repeat: no-repeat;
+  background-size:cover
+}
+body.ref{
+  background-image: url('../../images/44.gif');
+  background-repeat: no-repeat;
+  background-size:cover
 }
 
 #navbar {
@@ -26,7 +45,7 @@ body {
   width: 100%;
   z-index: 2;
   text-align: center;
-  background-color: #4d004d;
+  background-color: #000;
   margin: 0 0 30px;
 }
 
@@ -54,25 +73,42 @@ img {
 }
 
 #shadow {
-  box-shadow: 0 20px 30px #333;
+  box-shadow: 0 20px 30px #ffff99;
 }
 
 h1#text-shadow {
   font: bold 2.6em 'Elsie Swash Caps', cursive;
-  color: #eee;
-  text-shadow: 0 5px 8px yellow;
+  color: #e0e0d1;
+  text-shadow: 0 3px 5px #ffff99;
+}
+h1, h2, h3, h4, h5{
+  color: #ffff99;
 }
 
 
-div.thumbnail#nasa {
-	background-color: #c653c6;
+div#blue {
+	background-color: #0066ff;
 }
 
 #list{
 	background-color: #bf40bf;
 }
-#recoded{
-	background : linear-gradient(135deg,pink,white,#ebadd6 );
+div#recoded img{
+  height: 180px; 
+}
+#recoded {
+  background-color: rgba(0,0,0,0);
+  height: 550px
+}
+#recoded:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+.circle:hover
+{
+        border-radius:50%;
 }
  
  a:visited {
@@ -87,11 +123,29 @@ div.thumbnail#nasa {
   color: #660066;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+ 
+ div.bounce {
+   animation: bounceIn 2s;
+ }
+
 #footer {
   text-align: center; 
-  font-size: 0.75em;
+  font-size: 1em;
   padding: 10px;
-  background: #cc6699;
+  background: #000;
   border-top: 1px solid; 
 }
  #main {
@@ -103,4 +157,13 @@ div.thumbnail#nasa {
 h3#font-type{
   font-family: 'Arvo', serif;
   font-size: 30px;
+}
+p#black {
+  font: font-family: 'Arvo', serif;
+  font-size: 1em;
+  background-color: black;
+}
+
+h3#date, h3#explanation, h3#date2, h3#caption1 {
+  color: black;
 }
