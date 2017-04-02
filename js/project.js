@@ -23,7 +23,7 @@ function onClickFav(e) {
 
 function makeAjaxReqCurrent() {
 	$.ajax({
-		url: 'https://api.github.com/users/fatmaMY/repos?sort=created',
+		url: 'https://api.github.com/users/fatmaMY/repos?sort=updated&per_page=5',
 		type: 'GET',
 		dataType: 'json'
 	}).success(resultHandler)

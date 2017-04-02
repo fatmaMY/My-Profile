@@ -8,3 +8,5 @@ function navbarAjax() {
     $("#nav-placeholder").replaceWith(data);
 });
       }
+
+      

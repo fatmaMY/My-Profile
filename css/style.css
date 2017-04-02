@@ -1,8 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
-html.home {
-      height: 100%;
-    }
+.bg {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;*/
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,  
+    #2C3E50, #FD746C, 
+    #FF8235, #ffff1c, 
+    #92FE9D, #00C9FF, 
+    #a044ff, #e73827);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: gradient 120s ease infinite;
+}
+
+    
+@keyframes gradient { 
+  0%{background-position:0% 0%}
+  50%{background-position:100% 100%}
+  100%{background-position:0% 0%}
+}
   
 * {
   -webkit-box-sizing: border-box;
@@ -12,30 +39,19 @@ html.home {
 body#trans{
   background-color: rgba(0,0,0,.5); 
 }
-body.home{
-  background-image: url('../../images/coding4.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
+/*body.home{
+  
 }
 body.nasa{
-  background-image: url('../../images/coding8.jpg');
-  background-repeat: no-repeat;
-  background-size:cover
+  
 }
 body.project{
-  background-image: url('../../images/coding10.jpg');
-  background-repeat: no-repeat;
-  background-size:cover
+  
 }
 body.skill{
-  background-image: url('../../images/coding9.jpg');
-  background-repeat: no-repeat;
-  background-size:cover
-}
-body.ref{
-  /*background-image: url('../../images/37.gif');
-  background-repeat: no-repeat;
-  background-size:cover*/
+  
+}*/
+/*body.ref{
   background: 
 radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
 radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
@@ -46,7 +62,7 @@ radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,25
 linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
 background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
 background-color: #840b2a;
-}
+}*/
 
 #navbar {
    position: fixed;
@@ -87,9 +103,10 @@ img {
 }
 
 h1#text-shadow {
-  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  font: bold 2.6em 'Roboto', sans-serif;
+  /*font: bold 2.6em 'Elsie Swash Caps', cursive;*/
   color: #e0e0d1;
-  text-shadow: 0 3px 5px #ffff99;
+ /* text-shadow: 0 3px 5px #ffff99;*/
 }
 h1, h2, h3, h4, h5{
   color: #ffff99;
@@ -179,7 +196,7 @@ h3#date, h3#explanation, h3#date2, h3#caption1 {
 }
 .col-lg-4 {
   background-color: rgba(0,0,0,.5);
-height: 430px;}
+height: 470px;}
 
 #current {
   background-color: rgba(0,0,0,.5);
