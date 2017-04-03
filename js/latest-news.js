@@ -23,7 +23,7 @@ function resultHandler(data){
      html+=	' <div class="thumbnail">'
      html+=' <div class="caption">'
      html+='<h3 id="date">'+itm.publishedAt+'</h3>'
-     html+='<h3 id="explanation"><a href="'+itm.url+'">'+itm.title+'</a></h3>'
+     html+='<h3 id="explanation"><a href="'+itm.url+'" target="_blank">'+itm.title+'</a></h3>'
      html+=' <p>'+itm.description+'</p>'
      html+='<img src="'+itm.urlToImage+'">'
      html+='</div>'

@@ -5,7 +5,15 @@ $(document).ready(function(){
 });
 
 function makeAjaxReqFav() {
-	
+	$.ajax({
+		url: 'https://gh-pinned-repos.now.sh/?username=fatmaMy',
+		type: 'GET',
+		dataType: 'json'
+	}).success(favoriteHandle)
+
+	.fail(function(error){
+		$('#error').fadeIn();
+	});
 }
 
 
@@ -36,13 +44,12 @@ function makeAjaxReqCurrent() {
 }
 
 function resultHandler(data) {
-	var data=data.slice(0, 6);
 	var html=''
 	html+='<div class="row">'
 	html+='<ul>'
 	$.each(data,function(i,itm){
 	
-		html+='<li><a href="'+itm.html_url+'">'+itm.name+'</a></li>'+'Last update at '+itm.pushed_at.replace(/\T.*$/g,"")
+		html+='<li><a href="'+itm.html_url+'">'+itm.name+'</a></li>'+'Last update at: '+itm.pushed_at.replace(/\T.*$/g,"")
 	    });
 	    html+='</ul>'
 		html+='</div>'
@@ -51,3 +58,18 @@ function resultHandler(data) {
 	$('#current').append(html);
 
 }	
+function favoriteHandle(data) {
+	var html2=''
+	html2+='<div class="row">'
+	html2+='<ul>'
+	$.each(data,function(i,itm){
+	
+		html2+='<li>'+itm.repo+'</li>'+'Language: '+itm.language
+	    });
+	    html2+='</ul>'
+		html2+='</div>'
+		html2
+		
+	$('#favorite').append(html2);
+
+}

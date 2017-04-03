@@ -74,6 +74,9 @@ background-color: #840b2a;
   background-color: #000;
   margin: 0 0 30px;
 }
+#active:hover{
+  background-color: #330066;
+}
 
 #wrapper {
   width: 960px;
@@ -104,9 +107,8 @@ img {
 
 h1#text-shadow {
   font: bold 2.6em 'Roboto', sans-serif;
-  /*font: bold 2.6em 'Elsie Swash Caps', cursive;*/
+  
   color: #e0e0d1;
- /* text-shadow: 0 3px 5px #ffff99;*/
 }
 h1, h2, h3, h4, h5{
   color: #ffff99;
@@ -139,11 +141,11 @@ div#recoded img{
 }
  
  a:visited {
-  color: #ff0066;
+  color: blue;
   text-decoration: none;
 }
  a:hover {
-  color: #d24dff;
+  color: #000;
   text-decoration: underline;
 }
  a:active{
@@ -169,7 +171,8 @@ div#recoded img{
  }
 
 #footer {
-  text-align: center; 
+  text-align: center;
+  color: white; 
   font-size: 1em;
   padding: 10px;
   background: #000;
@@ -196,7 +199,7 @@ h3#date, h3#explanation, h3#date2, h3#caption1 {
 }
 .col-lg-4 {
   background-color: rgba(0,0,0,.5);
-height: 470px;}
+height: 500px;}
 
 #current {
   background-color: rgba(0,0,0,.5);
