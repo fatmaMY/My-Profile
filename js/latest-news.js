@@ -1,6 +1,7 @@
 $(document).ready(function(e){
 	makeAjaxReq();
-	});
+     // testResults();
+});
 
 function makeAjaxReq(){
 	$.ajax({ 
@@ -20,17 +21,18 @@ function resultHandler(data){
      html+=' <div class="thumbnail">'
      html+=' <div class="caption">'
      $.each(data.articles,function(i,itm){
-     html+=	' <div class="thumbnail">'
-     html+=' <div class="caption">'
-     html+='<h3 id="date">'+itm.publishedAt+'</h3>'
-     html+='<h3 id="explanation"><a href="'+itm.url+'" target="_blank">'+itm.title+'</a></h3>'
-     html+=' <p>'+itm.description+'</p>'
-     html+='<img src="'+itm.urlToImage+'">'
-     html+='</div>'
-     html+='</div>'
-     html+='</div>'
-     html+= '</div>'
-    
- });
-    $('#result').append(html);
+          if(itm.publishedAt != null && itm.urlToImage != null){
+               html+=	' <div class="thumbnail">'
+               html+=' <div class="caption">'
+               html+='<h3 id="date">'+itm.publishedAt.replace(/\T.*/g,"")+'</h3>'
+               html+='<h3 id="explanation"><a href="'+itm.url+'" target="_blank">'+itm.title+'</a></h3>'
+               html+=' <p>'+itm.description+'</p>'
+               html+='<img src="'+itm.urlToImage+'">'
+               html+='</div>'
+               html+='</div>'
+               html+='</div>'
+               html+= '</div>'
+
+          }});
+     $('#result').html(html);
 }
