@@ -1,14 +1,18 @@
 $(document).ready(function(e){
-	$.ajax({ 
-		url: "https://api.nasa.gov/planetary/apod?api_key=LXZnFUPNcwZrPCIHgn2GDBDXSFhIGcxV4HYXGzta",
-		context: document.body,
-		success: function(data){
-			handleData(data);
-
-		}});
-	makeAjaxRecentPhoto();
+	
+     ajaxRequestDailyPhoto();
+     makeAjaxRecentPhoto();
 });
 
+function ajaxRequestDailyPhoto() {
+ $.ajax({ 
+     url: "https://api.nasa.gov/planetary/apod?api_key=LXZnFUPNcwZrPCIHgn2GDBDXSFhIGcxV4HYXGzta",
+     context: document.body,
+     success: function(data){
+          handleData(data);
+
+     }});
+}
 function handleData(data) {
      //console.log(data.url)
      var html='<div class="row">'+
@@ -36,28 +40,28 @@ function handleData(data) {
      }
 
      $('#result').append(html);
- }
+}
 
- function makeAjaxRecentPhoto() {
- 	$.ajax({ 
- 		url: "https://api.nasa.gov/EPIC/api/natural?api_key=LXZnFUPNcwZrPCIHgn2GDBDXSFhIGcxV4HYXGzta",
- 		context: document.body,
- 		success: function(res){
- 			recentPhoto(res);
+function makeAjaxRecentPhoto() {
+   $.ajax({ 
+       url: "https://api.nasa.gov/EPIC/api/natural?api_key=LXZnFUPNcwZrPCIHgn2GDBDXSFhIGcxV4HYXGzta",
+       context: document.body,
+       success: function(res){
+           recentPhoto(res);
              //console.log(res)
-         }});
- }
- function recentPhoto(res) {
- 	var html2='<div class="row">'+
- 	'<div class="col-lg-12">'+
- 	' <div class="thumbnail">'+
- 	' <div class="caption">'+
- 	'<h3 id="date2">'+res[0].date+'</h3>'+
- 	'<h3 id="caption1">'+res[0].caption+'</h3>'+
- 	'</div>'+
- 	'</div>'+
- 	'</div>'+
- 	'</div>'
- 	$("#image2").attr("src", "https://epic.gsfc.nasa.gov/archive/natural/"+res[0].date.replace(/\-/g, "/").replace(/\s.*$/g,"")+"/png/"+res[0].image+".png");
- 	$('#result2').append(html2);
- }
+        }});
+}
+function recentPhoto(res) {
+   var html2='<div class="row">'+
+   '<div class="col-lg-12">'+
+   ' <div class="thumbnail">'+
+   ' <div class="caption">'+
+   '<h3 id="date2">'+res[0].date+'</h3>'+
+   '<h3 id="caption1">'+res[0].caption+'</h3>'+
+   '</div>'+
+   '</div>'+
+   '</div>'+
+   '</div>'
+   $("#image2").attr("src", "https://epic.gsfc.nasa.gov/archive/natural/"+res[0].date.replace(/\-/g, "/").replace(/\s.*$/g,"")+"/png/"+res[0].image+".png");
+   $('#result2').append(html2);
+}
