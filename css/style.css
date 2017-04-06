@@ -51,7 +51,7 @@ a.navbar-brand {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
   background-color: #000;
   margin: 0 0 30px;
@@ -166,7 +166,7 @@ div#recoded img{
   margin-top: 20px;
 }
 h3{
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 h3#font-type{

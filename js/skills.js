@@ -1,15 +1,7 @@
 $(document).ready(function(){
-	onClickMySkills();
+	makeAjaxReqSkills();
 });
 
-function onClickMySkills() {
-	$('#skillsList').click(function(e){
-		$(".list-group").fadeIn("slow");
-		e.preventDefault();
-		$('#respond').html('');
-		makeAjaxReqSkills();
-	});
-}
 
 function makeAjaxReqSkills() {
 	$.get("skills.json",function(data){
@@ -24,6 +16,6 @@ function makeAjaxReqSkills() {
      	'</div>'
 
      });
-     $('#respond').append(html);
+     $('#respond').html(html);
  });
 }
