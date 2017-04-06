@@ -17,7 +17,7 @@ function makeAjaxReq(){
 function resultHandler(data){
      var html=''
      html+='<div class="row">'
-     html+='<div class="col-lg-12">'
+     html+='<div class="col-md-12">'
      html+=' <div class="thumbnail">'
      html+=' <div class="caption">'
      $.each(data.articles,function(i,itm){
