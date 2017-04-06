@@ -1,6 +1,6 @@
 $(document).ready(function(e){
 	makeAjaxReq();
-     // testResults();
+     
 });
 
 function makeAjaxReq(){
@@ -20,14 +20,14 @@ function resultHandler(data){
      html+='<div class="col-md-12">'
      html+=' <div class="thumbnail">'
      html+=' <div class="caption">'
-     $.each(data.articles,function(i,itm){
-          if(itm.publishedAt != null && itm.urlToImage != null){
+     $.each(data.articles,function(i,item){
+          if(item.publishedAt != null && item.urlToImage != null){
                html+=	' <div class="thumbnail">'
                html+=' <div class="caption">'
-               html+='<h3 id="date">'+itm.publishedAt.replace(/\T.*/g,"")+'</h3>'
-               html+='<h3 id="explanation"><a href="'+itm.url+'" target="_blank">'+itm.title+'</a></h3>'
-               html+=' <p>'+itm.description+'</p>'
-               html+='<img src="'+itm.urlToImage+'">'
+               html+='<h3 id="date">'+item.publishedAt.replace(/\T.*/g,"")+'</h3>'
+               html+='<h3 id="explanation"><a href="'+item.url+'" target="_blank">'+item.title+'</a></h3>'
+               html+=' <p>'+item.description+'</p>'
+               html+='<img src="'+item.urlToImage+'">'
                html+='</div>'
                html+='</div>'
                html+='</div>'

@@ -1,17 +1,17 @@
 $(document).ready(function(){
-	makeAjaxReqSkills();
+	makeAjaxRequestSkills();
 });
 
 
-function makeAjaxReqSkills() {
+function makeAjaxRequestSkills() {
 	$.get("skills.json",function(data){
      //console.log(data)
      var html='';
-     $.each(data.skills,function(i,res){
+     $.each(data.skills,function(i,response){
      	html+='<div class="list-group">'+
      	'<a href="#" class="list-group-item active">'+
-     	'<h4 class="list-group-item-heading">'+res.name+'</h4>'+
-     	'<p class="list-group-item-text">'+res.description+'</p>'+
+     	'<h4 class="list-group-item-heading">'+response.name+'</h4>'+
+     	'<p class="list-group-item-text">'+response.description+'</p>'+
      	'</a>'+
      	'</div>'
 
