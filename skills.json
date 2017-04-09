@@ -1,9 +1,9 @@
 {"skills": [
 	{"name": "Procedural Ruby",
-     "description": "a programming language that would be simple to use, elegant to write, but capable of building vastly complex things."},
+     "description": "A programming language that would be simple to use, elegant to write, but capable of building vastly complex things."},
      
      {"name": "Object-Oriented Programming(OOP)",
-     "description": "It bundle up individual pieces of data that represent a (thing) — it also bundles customized functions that can be performed on that data. These are called methods; behaviors that an object performs upon its internal data and even upon other code objects."},
+     "description": "It bundles up individual pieces of data that represent a (thing) — it also bundles customized functions that can be performed on that data. These are called methods; behaviors that an object performs upon its internal data and even upon other code objects."},
      
      {"name": "Git",
      "description": "Is a distributed version control system. In a distributed system, all users have a complete copy of the entire repository."},
@@ -41,7 +41,7 @@
       {"name": "JavaScript",
       "description": "JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language.  Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production."},
       
-      {"name": "jQuery",
+      {"name": "JQuery",
       "description": "It's One of the most widely used JavaScript libraries. It makes our jobs as developers much easie."}
 
 

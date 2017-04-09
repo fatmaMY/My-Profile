@@ -41,6 +41,10 @@ body#trans{
   background-color: rgba(0,0,0,.5); 
 }
 
+small.developer {
+  color: white;
+}
+
 a.navbar-brand {
   font: bold 2.6em  'Great Vibes', cursive;
   color: white;
@@ -89,7 +93,6 @@ img {
 
 h1#text-shadow {
   font: bold 2.6em 'Roboto', sans-serif;
-  
   color: #e0e0d1;
 }
 h1, h2, h3, h4, h5{
