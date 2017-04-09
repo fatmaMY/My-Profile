@@ -18,3 +18,5 @@ Languages Used
 4-https://gh-pinned-repos.now.sh/?username=fatmaMy
 5-https://api.github.com/users/fatmaMY/repos?sort=updated&per_page=5
 
+changing colors of links
+making resposive media queri

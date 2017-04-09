@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 function makeAjaxRequestSkills() {
 	$.get("skills.json",function(data){
-     //console.log(data)
+     console.log(data)
      var html='';
      $.each(data.skills,function(i,response){
      	html+='<div class="list-group">'+
