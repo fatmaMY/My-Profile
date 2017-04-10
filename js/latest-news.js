@@ -18,11 +18,11 @@ function resultHandler(data){
      var html=''
      html+='<div class="row">'
      html+='<div class="col-md-12">'
-     html+=' <div class="thumbnail">'
-     html+=' <div class="caption">'
      $.each(data.articles,function(i,item){
           if(item.publishedAt != null && item.urlToImage != null){
-               html+=	' <div class="thumbnail">'
+               html+=' <div class="thumbnail" id=shadow>'
+               html+=' <div class="caption">'
+               html+=	' <div class="thumbnail" id="shadow">'
                html+=' <div class="caption">'
                html+='<h3 id="date">'+item.publishedAt.replace(/\T.*/g,"")+'</h3>'
                html+='<h3 id="explanation"><a href="'+item.url+'" target="_blank">'+item.title+'</a></h3>'
