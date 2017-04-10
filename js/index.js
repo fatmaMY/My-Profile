@@ -17,32 +17,6 @@ function imageCircle(){
 			}, 1000);
 		});
 
-		var shadow = $('div.circle#shadow');
-	
-		shadow.on('mouseover', function() {
-			shadow.animate({
-				borderRadius: '50%'
-			}, 1000);
-		})
-		.on('mouseout', function() {
-			shadow.animate({
-				borderRadius: '1%'
-			}, 1000);
-		});
-
+		
 }
 
-// function shadowCircle(){
-// 	var shadow = $('div.circle#shadow');
-	
-// 		shadow.on('mouseover', function() {
-// 			shadow.animate({
-// 				borderRadius: '50%'
-// 			}, 1000);
-// 		})
-// 		.on('mouseout', function() {
-// 			shadow.animate({
-// 				borderRadius: '1%'
-// 			}, 1000);
-// 		});
-// }

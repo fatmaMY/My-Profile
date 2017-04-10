@@ -68,7 +68,7 @@ function resultHandler(data) {
 	html+='<ul>'
 	$.each(data,function(i,item){
 	
-		html+='<li><a href="'+item.html_url+'" target="_blank">'+item.name+'</a></li>'+'Last update at: '+item.pushed_at.replace(/\T.*$/g,"")
+		html+='<li><a href="'+item.html_url+'" target="_blank">'+item.name+'</a>'+'<h3 class="whiteText">Last update at: '+item.pushed_at.replace(/\T.*$/g,"")+'</h3></li><br>'
 	    });
 	    html+='</ul>'
 		html+='</div>'
@@ -84,7 +84,7 @@ function favoriteHandle(data) {
 	html2+='<ul>'
 	$.each(data,function(i,item){
 	
-		html2+='<li><a href="https://github.com/fatmaMY/'+item.repo+'" target="_blank">'+item.repo+'</a></li>'+'Language: '+item.language
+		html2+='<li><a href="https://github.com/fatmaMY/'+item.repo+'" target="_blank">'+item.repo+'</a>'+'<h3 class="whiteText">Language: '+item.language+'</h3></li></br>'
 	    });
 	    html2+='</ul>'
 		html2+='</div>'
