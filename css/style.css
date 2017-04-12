@@ -134,12 +134,14 @@ div#recoded img{
 #recoded {
   background-color: white;
   height: 580px
+   z-index: 3;
 }
 #recoded:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
+      
 }
 
  

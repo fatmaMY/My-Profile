@@ -13,16 +13,16 @@ function makeAjaxReqFav() {
 	}).success(favoriteHandle)
 
 	.fail(function(error){
-		$('#error').fadeIn();
+		$('#error').show();
 	});
 }
 
 
 function onClickFav(e) {
 	$('#fav').click(function(e){
-		$('#current').fadeOut('');
-		$('#favorite').fadeIn();
-		$('#error').fadeOut();
+		$('#current').hide();
+		$('#favorite').show();
+		$('#error').hide();
 		e.preventDefault();
 		makeAjaxReqFav();
 
@@ -41,9 +41,9 @@ function makeAjaxReqCurrent() {
 		$('#error').fadeIn();
 	});
   $('#curr').click(function(e){
-		$('#favorite').fadeOut('');
-		$('#current').fadeIn();
-		$('#error').fadeOut();
+		$('#favorite').hide();
+		$('#current').show();
+		$('#error').hide();
 		e.preventDefault();
 
 	});
@@ -52,9 +52,9 @@ function makeAjaxReqCurrent() {
 
 function onClickCurrent(){
 	$('#curr').click(function(e){
-		$('#favorite').fadeOut('');
-		$('#current').fadeIn();
-		$('#error').fadeOut();
+		$('#favorite').hide();
+		$('#current').show();
+		$('#error').hide();
 		e.preventDefault();
 		makeAjaxReqCurrent();
 		
